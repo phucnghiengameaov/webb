@@ -1,0 +1,218 @@
+
+.menu {
+    display: flex;
+    background: #191919;
+    padding: 10px;
+    justify-content: center;
+    margin:0 ;
+}
+
+.menu a {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    padding: 20px;
+    margin: 0;
+    transition: 0.4s;
+}
+body{
+    background: linear-gradient(to left,#663399,#3333FF,	
+    #FFCC33 ) ;
+}
+.menu a:hover {
+    background: #1ba2eb;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 100px;
+    cursor: pointer; /* Khi hover vào link, con trỏ sẽ biến thành bàn tay */
+}
+
+footer {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color:#f1f1f1;
+    border-left: 5px solid #1ba2eb;
+    padding-left: 10px;
+}
+
+
+.block-element {
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.block-element img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.block-element img:hover {
+    transform: scale(1.05);
+}
+
+.block-element audio {
+    width: 100%;
+}
+
+.timkiem {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: right;
+    margin-top: -10px;
+}
+
+#search {
+    
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.timkiem button {
+    margin-top: 20px;
+    height: 35px;
+    padding: 0 15px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.timkiem button:hover {
+    background-color: #555;
+}
+
+/* Slide container */
+.slide-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.song-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.song-list li {
+    margin-bottom: 10px;
+}
+
+.toggle-title {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.toggle-title:hover {
+    background-color: #ddd;
+}
+
+
+
+
+.box {
+    background-color: #f1f1f1; /* Màu nền giống .block-element */
+    border-radius: 10px; /* Bo góc giống .block-element */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng giống .block-element */
+    width: 250px; /* Chiều rộng giống .block-element */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 15px; /* Padding giống .block-element */
+    transition: transform 0.3s ease; /* Hiệu ứng giống .block-element */
+}                                                                                              
+
+.box img {
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng của ô */
+    height: 200px; /* Chiều cao giống .block-element img */
+    object-fit: cover; /* Giữ tỷ lệ hình ảnh, giống .block-element img */
+    border-radius: 10px; /* Bo góc giống .block-element img */
+    margin-bottom: 10px; /* Khoảng cách phía dưới giống .block-element img */
+}
+
+.box img:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to khi hover, giống .block-element img */
+}
+
+.box p {
+    margin: 10px 0 0; /* Khoảng cách phía trên văn bản */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    font-family: 'Times New Roman', sans-serif; /* Font giống footer */
+}
+
+.box .subtitle {
+    font-size: 14px;
+    color: #666; /* Màu chữ nhạt hơn */
+    margin: 5px 0 0;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.like-btn {
+    font-size: 24px;
+    color: #aaa;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .like-btn.liked {
+    color: red;
+  }
+  
+
+  .block-element {
+    background: #ffffff10;
+    backdrop-filter: blur(8px);
+    color:black;
+    border: 1px solid rgb beige;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block-element:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
